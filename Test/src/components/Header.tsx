@@ -13,7 +13,7 @@ const Header = ( {ownerName, petName}: props) => {
         <h1>{ownerName}</h1>
         <h1>Fonzo's Veterinary</h1>
             <ul className="header-links">
-                <li className="header-item"><a>Notifications</a></li>
+                <li className="header-item"><a>Records</a></li>
                 <li className="header-item"><a>Options</a></li>
             </ul>
         </nav>
