@@ -1,4 +1,3 @@
-import React from 'react';
 import './Styles/Id.css';
 
 
@@ -14,8 +13,6 @@ type props = {
     PCN: number,
     group: string,
 }
-
-//const Header = ( {ownerName, petName}: props) 
 
 const Id = ({
     petName,
@@ -40,10 +37,10 @@ const Id = ({
                 </div>
                 <div>
                     <ul className='id-links'>
-                        <li className='id-item'>Pet Name: {petName}</li>
-                        <li className='id-item'>Member ID: {memberID}</li>
-                        <li className='id-item'>Plan Type: {planType}</li>
-                        <li className='id-item'>Status: {status}</li>
+                        <li className='id-item'><strong>Pet Name: </strong>{petName}</li>
+                        <li className='id-item'><strong>Member ID: </strong>{memberID}</li>
+                        <li className='id-item'><strong>Plan Type: </strong>{planType}</li>
+                        <li className='id-item'><strong>Status: </strong>{status}</li>
                     </ul>
                 </div>
                 <div>
@@ -51,12 +48,12 @@ const Id = ({
                 </div>
                 <div>
                         <ul className='id-links'>
-                            <li>Policy Holder Name: {policyHolderName}</li>
-                            <li>Relationship: {relationship}</li>
-                            <li>Pet DOB: {petDOB}</li>
-                            <li>BIN: {BIN}</li>
-                            <li>PCN: {PCN}</li>
-                            <li>GROUP: {group}</li>
+                            <li><strong>Policy Holder Name: </strong>{policyHolderName}</li>
+                            <li><strong>Relationship: </strong>{relationship}</li>
+                            <li><strong>Pet DOB: </strong>{petDOB}</li>
+                            <li><strong>BIN: </strong>{BIN}</li>
+                            <li><strong>PCN: </strong>{PCN}</li>
+                            <li><strong>GROUP: </strong>{group}</li>
                         </ul>
                 </div>
             </div>

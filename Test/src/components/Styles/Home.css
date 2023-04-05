@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 .home-container {
+    min-width: 25%;
     padding: 20px;
-    margin-left: 38%;
-    margin-right: 38%;
+    margin-left: 32%;
+    margin-right: 32%;
     display: flex;
     justify-content: space-between;
     background-color: lightgrey;
@@ -27,10 +28,11 @@
     background-color: white;
   }
 
-  .home-item a {
+  .home-item {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 3px;
     text-decoration: none;
+    border-radius: 20px;
   }
 
   .home-item:hover {

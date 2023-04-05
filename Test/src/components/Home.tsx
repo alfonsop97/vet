@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import './Styles/Home.css';
 import Id from './Id';
@@ -7,37 +6,34 @@ import Appointments from './Appointments';
 const Home = () => {
 
     const [tab, setTab] = useState("id");
-    const [navColor, setNavColor] = useState("id-active");
-    
-    var test= "home-item";
-    function tabSelected() {
-
-    }
-
+    const [navLeft, setNavLeft] = useState("id-active");
+    const [navRight, setNavRight] = useState("appointment-active")
 
     //information would be sent from db into component
     return (
         <>
         <nav className="home-container">
             <ul className='home-links'>
-               <li className={`home-item ${navColor}`}
+               <li className={`home-item ${navLeft}`}
                 onClick={() => {
                     setTab("id"); 
-                    setNavColor("id-active")}
+                    setNavLeft("id-active");
+                    setNavRight("")}
                     }>ID Card</li>
 
             </ul>
             <ul className='home-links'>
-                <li className='home-item appointments-active' 
+                <li className={`home-item ${navRight}`}
                 onClick={() => {
                     setTab("appointments");
-                    setNavColor("appointments-active")}
+                    setNavLeft("");
+                    setNavRight("appointments-active")}
                     }>Appointments</li>
             </ul>
         </nav>
         
             {tab === "home"}
-            {tab === "appointments" && <Appointments />}
+            {tab === "appointments" && <Appointments appointmentIsActive={"true"}/>}
             {tab === "id" && <Id  
                 petName={"Odesza"}
                 memberID={45435643}
